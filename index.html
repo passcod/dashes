@@ -1,46 +1,312 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Dash</title>
+    <title>Dashes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
     <style>
       html {
-        border: 0;
-        padding: 0;
-        margin: 0;
-        
-        background: url(http://subtlepatterns.com/patterns/arches.png) repeat fixed;
-        font-family: sans-serif;
-        font-size: 10em;
+        background: #FEFEFE;
+        font: sans-serif;
       }
-      
-      body {
-        padding: 10px;
-        margin: auto;
-        text-align: center;
-        width: 5em;
+
+      section.dash {
+        background: rgba(255, 255, 255, 0.5);
+        border: 3px double #EEEEEE;
+        display: inline-block;
+        height: 180px;
+        margin: 10px 5px;
+        position: relative;
+        width: 290px;
+      }
+
+      .char {
+        font-size: 10em;
+        margin: 0;
+        padding: 0.5rem 1rem;
+      }
+
+      .info {
+        padding: 2rem;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 0;
+        width: 30%;
       }
     </style>
   </head>
   <body>
-    <h1>Dash</h1>
-    <p class="dash" title="Em dash. HTML: &amp;mdash; Unicode: U+2014">&#8212;<p>
-    <p class="dash" title="En dash. HTML: &amp;ndash; Unicode: U+2013">&#8211;<p>
-    <p class="dash" title="Figure dash. HTML: &amp;#x2012; Unicode: U+2012">&#8210;<p>
-    <p class="dash" title="Swung dash. HTML: &amp;#x2053; Unicode: U+2053">&#8275;<p>
-    <p class="dash" title="Chōonpu. HTML: &amp;#x30FC; Unicode: U+30FC">&#x30FC;<p>
+    <nav>Also see
+      : <a rel="me" href="https://brackets.passcod.name">Brackets</a>
+      : <a rel="me" href="https://tildes.passcod.name">Tildes</a>
+    </nav>
+
+    <!-- common -->
+    <section class="dash">
+      <p class="char">-</p>
+      <aside class="info">
+        <p class="name">Hyphen-minus</p>
+        <p class="unicode">U+002D</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">—</p>
+      <aside class="info">
+        <p class="name">Em dash</p>
+        <p class="unicode">U+2014</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">–</p>
+      <aside class="info">
+        <p class="name">En dash</p>
+        <p class="unicode">U+2013</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">‐</p>
+      <aside class="info">
+        <p class="name">Hyphen</p>
+        <p class="unicode">U+2010</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">−</p>
+      <aside class="info">
+        <p class="name">Minus</p>
+        <p class="unicode">U+2212</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">➖</p>
+      <aside class="info">
+        <p class="name">Heavy minus (emoji)</p>
+        <p class="unicode">U+2796</p>
+      </aside>
+    </section>
+
+    <!-- less common -->
+    <section class="dash">
+      <p class="char">‒</p>
+      <aside class="info">
+        <p class="name">Figure dash</p>
+        <p class="unicode">U+2012</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">﹘</p>
+      <aside class="info">
+        <p class="name">Small em dash</p>
+        <p class="unicode">U+FE58</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">﹣</p>
+      <aside class="info">
+        <p class="name">Small hyphen-minus</p>
+        <p class="unicode">U+FE63</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">‑</p>
+      <aside class="info">
+        <p class="name">Non-breaking hyphen</p>
+        <p class="unicode">U+2011</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">－</p>
+      <aside class="info">
+        <p class="name">Fullwidth hyphen-minus</p>
+        <p class="unicode">U+FF0D</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⸺</p>
+      <aside class="info">
+        <p class="name">Two-em dash</p>
+        <p class="unicode">U+2E3A</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⸻</p>
+      <aside class="info">
+        <p class="name">Three-em dash</p>
+        <p class="unicode">U+2E3B</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">―</p>
+      <aside class="info">
+        <p class="name">Horizontal bar</p>
+        <p class="unicode">U+2015</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">︱</p>
+      <aside class="info">
+        <p class="name">Vertical em dash</p>
+        <p class="unicode">U+FE31</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">︲</p>
+      <aside class="info">
+        <p class="name">Vertical en dash</p>
+        <p class="unicode">U+FE32</p>
+      </aside>
+    </section>
+
+    <!-- rare -->
+    <section class="dash">
+      <p class="char">֊</p>
+      <aside class="info">
+        <p class="name">Armenian hyphen</p>
+        <p class="unicode">U+058A</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">᐀</p>
+      <aside class="info">
+        <p class="name">Canadian syllabics hyphen</p>
+        <p class="unicode">U+1400</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">ー</p>
+      <aside class="info">
+        <p class="name">Chōonpu</p>
+        <p class="unicode">U+30FC</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">᠆</p>
+      <aside class="info">
+        <p class="name">Mongolian hyphen</p>
+        <p class="unicode">U+1806</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">゠</p>
+      <aside class="info">
+        <p class="name">Kana double-hyphen</p>
+        <p class="unicode">U+30A0</p>
+      </aside>
+    </section>
+
+    <!-- weird -->
+    <section class="dash">
+      <p class="char">⚊</p>
+      <aside class="info">
+        <p class="name">Yang</p>
+        <p class="unicode">U+268A</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⹃</p>
+      <aside class="info">
+        <p class="name">Dash with left upturn</p>
+        <p class="unicode">U+2E43</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⸚</p>
+      <aside class="info">
+        <p class="name">Hyphen with diaeresis</p>
+        <p class="unicode">U+2E1A</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⤼</p>
+      <aside class="info">
+        <p class="name">Minus with arrow</p>
+        <p class="unicode">U+293C</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⨩</p>
+      <aside class="info">
+        <p class="name">Minus with comma</p>
+        <p class="unicode">U+2A29</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">∸</p>
+      <aside class="info">
+        <p class="name">Minus dot above</p>
+        <p class="unicode">U+2238</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⨪</p>
+      <aside class="info">
+        <p class="name">Minus dot below</p>
+        <p class="unicode">U+2A2A</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⨬</p>
+      <aside class="info">
+        <p class="name">Minus rising dots</p>
+        <p class="unicode">U+2A2C</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⨫</p>
+      <aside class="info">
+        <p class="name">Minus falling dots</p>
+        <p class="unicode">U+2A2B</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⸗</p>
+      <aside class="info">
+        <p class="name">Double oblique hyphen</p>
+        <p class="unicode">U+2E17</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⑈</p>
+      <aside class="info">
+        <p class="name">OCR Dash</p>
+        <p class="unicode">U+2448</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⊝</p>
+      <aside class="info">
+        <p class="name">Circled dash</p>
+        <p class="unicode">U+229D</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⊖</p>
+      <aside class="info">
+        <p class="name">Circled minus</p>
+        <p class="unicode">U+2296</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⊟</p>
+      <aside class="info">
+        <p class="name">Squared minus</p>
+        <p class="unicode">U+229F</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">≂</p>
+      <aside class="info">
+        <p class="name">Minus tilde</p>
+        <p class="unicode">U+2242</p>
+      </aside>
+    </section>
+    <section class="dash">
+      <p class="char">⩬</p>
+      <aside class="info">
+        <p class="name">Similar minus similar</p>
+        <p class="unicode">U+2A6C</p>
+      </aside>
+    </section>
   </body>
-  <script>
-    var _gauges = _gauges || [];
-    (function() {
-    var t   = document.createElement('script');
-    t.type  = 'text/javascript';
-    t.async = true;
-    t.id    = 'gauges-tracker';
-    t.setAttribute('data-site-id', '4ff29ae8613f5d67b8000031');
-    t.src = '//secure.gaug.es/track.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(t, s);
-    })();
-  </script>
 </html>
